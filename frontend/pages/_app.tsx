@@ -114,7 +114,7 @@ function AppContent({ Component, pageProps }: AppProps) {
   }, []);
 
   useEffect(() => {
-    if (typeof window !== "undefined" && "serviceWorker" in navigator) {
+    if (process.env.NODE_ENV === "production" && "serviceWorker" in navigator) {
       navigator.serviceWorker.register("/sw.js").catch((error) => {
         console.log("Service worker registration failed:", error);
       });
