@@ -54,8 +54,7 @@ stellar-marketpay/
 ├── backend/               # Node.js + Express REST API
 ├── contracts/             # Stellar Soroban smart contracts (Rust)
 ├── packages/
-│   ├── backend/           # Shared backend packages & utilities
-│   └── client/            # TypeScript/JavaScript client SDK
+│   └── client/            # Repository client source (not published)
 ├── infra/
 │   ├── cloudflare/        # CDN & WAF configuration
 │   ├── grafana/           # Monitoring dashboards
@@ -225,7 +224,7 @@ Deploy or upgrade the Soroban escrow contract using [docs/contract-deployment.md
 ## 📚 Documentation
 
 - **[Architecture Decision Records (ADRs)](docs/adr/README.md)** — Design decisions and rationale
-- **[API Client SDKs](docs/api-client-sdk.md)** — TypeScript, Python, and Go client libraries
+- **[API Client integration](docs/api-client-sdk.md)** — REST/OpenAPI usage and planned SDKs
 - **[Troubleshooting Guide](docs/troubleshooting.md)** — Common issues and solutions
 - **[Production Deployment](docs/deployment-production.md)** — Deploy to AWS, GCP, or DigitalOcean
 - **[API Documentation](docs/api.md)** — Complete API reference
