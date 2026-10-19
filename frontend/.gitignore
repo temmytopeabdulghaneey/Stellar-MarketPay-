@@ -8,3 +8,5 @@ public/workbox-*.js
 
 # Dependencies
 node_modules/
+.next/
+public/sw.js
